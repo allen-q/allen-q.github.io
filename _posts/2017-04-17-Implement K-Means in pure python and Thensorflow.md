@@ -56,3 +56,5 @@ for i in range(30):
 ![k-means_iteration_10]({{site.baseurl}}/images/qt_img128179003981828.png)
 
 ![k-means_final]({{site.baseurl}}/images/qt_img128299263066116.png)
+![test]({{site.baseurl}}/images/qt_img127951370715140.png)
+
