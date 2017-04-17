@@ -48,10 +48,11 @@ for i in range(30):
     assignment = assign_lables(X_data,centroids)
     plot_labels()
 ```
-![k-means_initial_distribution]({{site.baseurl}}/_posts/qt_img127951370715140.png)
 
-![k-means_iteration_5]({{site.baseurl}}/_posts/qt_img128179003981828.png)
+![k-means_initial_distribution]({{site.baseurl}}/images/qt_img127951370715140.png)
 
-![k-means_iteration_10]({{site.baseurl}}/_posts/qt_img128479651692548.png)
+![k-means_iteration_5]({{site.baseurl}}/images/qt_img128058744897540.png)
 
-![k-means_final]({{site.baseurl}}/_posts/qt_img129141076656132.png)
+![k-means_iteration_10]({{site.baseurl}}/images/qt_img128179003981828.png)
+
+![k-means_final]({{site.baseurl}}/images/qt_img128299263066116.png)
