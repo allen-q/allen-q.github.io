@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## K-Means in pure python and Thensorflow
 
