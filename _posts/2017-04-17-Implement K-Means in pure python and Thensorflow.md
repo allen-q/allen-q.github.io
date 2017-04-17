@@ -1,8 +1,6 @@
 ---
 published: true
 ---
-## K-Means in pure python and Thensorflow
-
 In this post, I'm going to implement a vanilla version of the K-Means algorithm in pure Python and in Tensorflow.
 
 ```python
