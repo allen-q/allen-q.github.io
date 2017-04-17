@@ -43,18 +43,20 @@ centroids = X_data[np.random.choice(len(X_data),size=K,replace=False)]
 assignment=assign_lables(X_data,centroids)
 plot_labels()
 
-for i in range(30):    
+for i in range(15):    
     centroids = refine_centroids(X_data,assignment)
     assignment = assign_lables(X_data,centroids)
     plot_labels()
 ```
 
-![k-means_initial_distribution]({{site.baseurl}}/images/qt_img127951370715140.png)
 
-![k-means_iteration_5]({{site.baseurl}}/images/qt_img128058744897540.png)
+![k-means-python-initial]({{site.baseurl}}/images/qt_img127951370715140.png)
+![k-means_python-iter1]({{site.baseurl}}/images/qt_img127998615355396.png)
+![k-means_python-iter3]({{site.baseurl}}/images/qt_img128118874439684.png)
+![k-means_python-iter5]({{site.baseurl}}/images/qt_img128239133523972.png)
+![k-means_python-iter7]({{site.baseurl}}/images/qt_img128359392608260.png)
+![k-means_python-iter9]({{site.baseurl}}/images/qt_img128479651692548.png)
+![k-means_python-iter15]({{site.baseurl}}/images/qt_img129141076656132.png)![qt_img129141076656132.png]({{site.baseurl}}/images/qt_img129141076656132.png)
 
-![k-means_iteration_10]({{site.baseurl}}/images/qt_img128179003981828.png)
 
-![k-means_final]({{site.baseurl}}/images/qt_img128299263066116.png)
-![test]({{site.baseurl}}/images/qt_img127951370715140.png)
 
