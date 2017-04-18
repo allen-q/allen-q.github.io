@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 These equations work properly:
