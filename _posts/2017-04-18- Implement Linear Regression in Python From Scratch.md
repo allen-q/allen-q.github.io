@@ -20,10 +20,34 @@ plt.plot(X_data,y_data)
 plt.show()
 ```
 
-Plot X and y:
+Plot the raw data:
+
 ![k-means_python-iter5]({{site.baseurl}}/images/lr/output_0_1.png)
 
 A single variable linear function has an equation of the form $$ Y = W*X + b $$ where X is the independent variable and Y is the dependent variable. The slope of the line is W and b is the intercept.
+
+For the sample data set we have generated, we know W is about 50 and b is about 4000. However, in real world when we get a dataset, these parameters are often unknown and that's the problem we are going to solve. We are going to build a simple machine learning model to 'learn' these parameters from the training data set. 
+
+First step is to initilize the parameters W and b. In this example, I'm going to assign a random number between 0 and 1 to W and 0 to b. 
+
+```python
+W = np.random.random()
+b = 0
+```
+
+We can then estimate Y using the the formular $$ Y = W*X + b $$
+
+```python
+y_pred = X_data * W + b
+```
+
+The next step is to determine how close y_pred is to the ground truth y_data. To quantify how good our y_pred, we introduce a metric called 'loss function'. There are many ways to define a loss function and one of the most commonly used loss function is called the Mean Square Error (MSE). MSE is defined as $$ MSE = \frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2 $$. Below is the python code to calculate loss.
+
+
+```python
+loss = 0.5*np.mean((y_pred - y_data)**2)  
+```
+
 
 
 ```python
