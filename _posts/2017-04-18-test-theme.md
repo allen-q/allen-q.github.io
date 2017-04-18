@@ -15,7 +15,7 @@ Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block
 
 another one
 
-\\( F'(\theta_*)=\lim\limits_{\theta\to\theta_*}\frac{F(\theta)-F(\theta_*)}{\theta-\theta_*} \\)
+\\[ F'(\theta_*)=\lim\limits_{\theta\to\theta_*}\frac{F(\theta)-F(\theta_*)}{\theta-\theta_*} \\]
 
 
 another one
