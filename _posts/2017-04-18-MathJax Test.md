@@ -17,4 +17,4 @@ This one doesn't work:
 ```
 \\[ F'(\theta_*)=\lim\limits_{\theta\to\theta_*}\frac{F(\theta)-F(\theta_*)}{\theta-\theta_*} \\]
 ```
-\\[ F'(\theta_*)=\lim\limits_{\theta\to\theta_*}\frac{F(\theta)-F(\theta_*)}{\theta-\theta_*} \\]
+$$ F'(\theta_*)=\lim\limits_{\theta\to\theta_*}\frac{F(\theta)-F(\theta_*)}{\theta-\theta_*} $$
