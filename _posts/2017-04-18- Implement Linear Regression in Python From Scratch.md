@@ -16,13 +16,14 @@ y_data = (4000 + 50 * X_data) + np.random.normal(0,3,size=len(X_data))*100
 
 #plot raw data
 print('Raw Data')
-plt.clf()
 plt.plot(X_data,y_data)
 plt.show()
 ```
+
 Plot X and y:
 ![k-means_python-iter5]({{site.baseurl}}/images/lr/output_0_1.png)
 
+A single variable linear function has an equation of the form $$ Y = W*X + b $$ where X is the independent variable and Y is the dependent variable. The slope of the line is W and b is the intercept.
 
 
 ```python
