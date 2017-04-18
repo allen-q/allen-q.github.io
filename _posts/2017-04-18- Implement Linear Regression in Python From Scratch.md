@@ -28,7 +28,7 @@ A single variable linear function has an equation of the form $$ Y = W*X + b $$ 
 
 For the sample data set we have generated, we know W is about 50 and b is about 4000. However, in real world when we get a dataset, these parameters are often unknown and that's the problem we are going to solve. We are going to build a simple machine learning model to 'learn' these parameters from the training data set. 
 
-First step is to initilize the parameters W and b. In this example, I'm going to assign a random number between 0 and 1 to W and 0 to b. 
+First step is to initilize the parameters W and b. In this example, I'm going to assign a random number to W and 0 to b. As long as you assign a non-zero value to W the model should work. It might just take longer to converge with a bad initialization.
 
 ```python
 W = np.random.random()
@@ -48,6 +48,7 @@ The next step is to determine how close y_pred is to the ground truth y_data. To
 loss = 0.5*np.mean((y_pred - y_data)**2)  
 ```
 
+We now know how good the W and b parameters fit the data set, we need to find a way to improve them. We will do it by using an algorithm called gradient descent. 
 
 
 ```python
