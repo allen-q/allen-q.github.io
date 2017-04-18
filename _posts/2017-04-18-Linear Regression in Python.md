@@ -2,6 +2,8 @@
 published: true
 ---
 
+In this post, I'm going to implement the Linear Regression algorithm from scrach using pure Python code.
+
 
 ```python
 # -*- coding: utf-8 -*-
@@ -57,77 +59,77 @@ print('Training Stats: \nEpochs:{}, W:{}, b:{}, loss:{}, dW:{}, db:{}'.format(ep
     
 
 
-![png](output_0_1.png)
+![png]({{site.baseurl}}/images/lr/output_0_1.png)
 
 
     Epoch:0, W:182.87746440940936, b:3.2356393868964397, loss:22003630.303832497, dW:-364407.97873254475, db:-6471.278773792879
     
 
 
-![png](output_0_3.png)
+![png]({{site.baseurl}}/images/lr/output_0_3.png)
 
 
     Epoch:5000, W:82.19436206027052, b:1863.6071594519628, loss:621539.4658909226, dW:8.044985679682345, db:-535.7701051391163
     
 
 
-![png](output_0_5.png)
+![png]({{site.baseurl}}/images/lr/output_0_5.png)
 
 
     Epoch:10000, W:67.25272119607219, b:2859.1438826720114, loss:212077.28846892182, dW:4.297215674001723, db:-286.5374256957569
     
 
 
-![png](output_0_7.png)
+![png]({{site.baseurl}}/images/lr/output_0_7.png)
 
 
     Epoch:15000, W:59.26171428220094, b:3391.5709008278927, loss:94960.464222252, dW:2.3121905121668243, db:-153.24401749263194
     
 
 
-![png](output_0_9.png)
+![png]({{site.baseurl}}/images/lr/output_0_9.png)
 
 
     Epoch:20000, W:54.988020624082026, b:3676.3203462049905, loss:61462.02017007064, dW:1.2326599906920455, db:-81.9571420043507
     
 
 
-![png](output_0_11.png)
+![png]({{site.baseurl}}/images/lr/output_0_11.png)
 
 
     Epoch:25000, W:52.70238928113305, b:3828.6083480619427, loss:51880.58116044198, dW:0.6435117712257197, db:-43.832059973100705
     
 
 
-![png](output_0_13.png)
+![png]({{site.baseurl}}/images/lr/output_0_13.png)
 
 
     Epoch:30000, W:51.47998993561014, b:3910.054109952339, loss:49140.04065844567, dW:0.37040056447545067, db:-23.441584631303822
     
 
 
-![png](output_0_15.png)
+![png]({{site.baseurl}}/images/lr/output_0_15.png)
 
 
     Epoch:35000, W:50.82624364074737, b:3953.6124468015896, loss:48356.17221420905, dW:0.19513092788661016, db:-12.536938879350698
     
 
 
-![png](output_0_17.png)
+![png]({{site.baseurl}}/images/lr/output_0_17.png)
 
 
     Epoch:40000, W:50.47660880698521, b:3976.908057570531, loss:48131.96822914358, dW:0.10178082272975734, db:-6.704953283647574
     
 
 
-![png](output_0_19.png)
+![png]({{site.baseurl}}/images/lr/output_0_19.png)
 
 
     Epoch:45000, W:50.289622654662296, b:3989.3668778007655, loss:48067.84134583347, dW:0.03796690074479556, db:-3.586184728960075
     
 
 
-![png](output_0_21.png)
+![png]({{site.baseurl}}/images/lr/output_0_21.png)
 
 
     Training Stats: 
