@@ -62,15 +62,16 @@ Partial derivative of L w.r.t b:
 
 Update rules:
 
-\\[W=W-Step Size\*\frac{\partial L}{\partial b}\\]
-\\[W=W-StepSize\*\frac{\partial L}{\partial b}\\]
+\\[W=W-Stepsize\*\frac{\partial L}{\partial W}\\]
+\\[b=b-Stepsize\*\frac{\partial L}{\partial b}\\]
 
+Putting everything together:
 ```python
 # -*- coding: utf-8 -*-
 """
 Created on Thu Apr 13 14:57:03 2017
 
-@author: allenq
+@author: allen qin
 """
 
 import numpy as np
