@@ -56,6 +56,10 @@ Partial derivative of L w.r.t W:
 
 \\[ \frac{\partial L}{\partial W} = \frac{1}{N}*\sum(\widehat{y} - y)*X) \\]
 
+\\[ \frac{\partial L}{\partial W} \\]
+
+\\[ \frac{1}{N}*\sum(\widehat{y} - y)*X) \\]
+
 
 
 ```python
