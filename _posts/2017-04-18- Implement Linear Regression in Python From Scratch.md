@@ -60,6 +60,11 @@ Partial derivative of L w.r.t b:
 
 \\[\frac{\partial L}{\partial b}=\frac{1}{N}*\sum(\widehat{y}-y)\\]
 
+Update rules:
+
+\\[W=W-Step Size\*\frac{\partial L}{\partial b}\\]
+\\[W=W-StepSize\*\frac{\partial L}{\partial b}\\]
+
 ```python
 # -*- coding: utf-8 -*-
 """
