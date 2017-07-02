@@ -58,9 +58,9 @@ Partial derivative of L w.r.t W:
 
 \\[ \frac{\partial L}{\partial W} \\]
 
-\\[ \frac{1}{N}*\sum(\widehat{y} - y)*X) \\]
+\\[ \frac{1}{N}*\sum(\widehat{y}-y)*X) \\]
 
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{N}*\sum(\widehat{y}-y)*X)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{1}{N}*\sum(\widehat{y}-y)*X)" title="\frac{1}{N}*\sum(\widehat{y}-y)*X)" /></a>
 
 ```python
 # -*- coding: utf-8 -*-
