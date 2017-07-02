@@ -41,15 +41,22 @@ We can then estimate Y using the the formular $$ Y = W*X + b $$
 y_pred = X_data * W + b
 ```
 
-The next step is to determine how close y_pred is to the ground truth y_data. To quantify how good our y_pred, we introduce a metric called 'loss function'. There are many ways to define a loss function and one of the most commonly used loss function is called the Mean Square Error (MSE). MSE is defined as $$ MSE = \frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2 $$. Below is the python code to calculate loss.
+The next step is to determine how close y_pred is to the ground truth y_data. To quantify how good our y_pred, we introduce a metric called 'loss function' denoted as L. There are many ways to define a loss function and one of the most commonly used loss function is called the Mean Square Error (MSE). MSE is defined as $$ MSE = \frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2 $$. Below is the python code to calculate loss.
 
 
 ```python
-loss = 0.5*np.mean((y_pred - y_data)**2)  
+L = 0.5*np.mean((y_pred - y_data)**2)  
 ```
 
 We now know how good the W and b parameters fit the data set, we need to find a way to improve them. We will do it by using an algorithm called gradient descent. 
 
+Gradient descent is an iterative approach to finding the minimum of the loss function by changing X along the negative direction of the gradient of the loss function. This process is similar to walking downwards a hill. The gradient of the hill is the steepest direction at a point to the top. As we need to walk downwards, we take opposite direction of the gradient. By repeating this process, it can guarantee we reach the lowest point after some iterations. Gradient is a vector of partial derivatives with repect to each of the independent variables, in this case, W and b. So all we need to do is to calculate the partial derivatives of L with repect to W and b and then update W and b in the negative direction of the derivatives. 
+
+Partial derivative of L w.r.t W: 
+
+\\[ \frac{\partial L}{\partial W} \\]
+
+\\[ \frac{1}{n^{2}} \\]
 
 ```python
 # -*- coding: utf-8 -*-
@@ -84,8 +91,11 @@ max_iteration = 50000
 for epoch in range(max_iteration):    
     y_pred = X_data * W + b
     loss = 0.5*np.mean((y_pred - y_data)**2)  
+    # The partial derivative of loss function w.r.t W
     dW = np.mean((y_pred - y_data)*X_data)
-    db = np.mean(y_pred - y_data)    
+    # The partial derivative of loss function w.r.t b
+    db = np.mean(y_pred - y_data)   
+    # Take one step in the negative direction of the derivative
     W -= step_size*dW
     b -= step_size*db    
     
