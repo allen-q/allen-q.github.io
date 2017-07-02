@@ -54,7 +54,7 @@ Gradient descent is an iterative approach to finding the minimum of the loss fun
 
 Partial derivative of L w.r.t W: 
 
-\\[\frac{\partial L}{\partial b}=\frac{1}{N}*\sum(\widehat{y}-y)*X\\]
+$$ \frac{\partial L}{\partial b}=\frac{1}{N}*\sum(\widehat{y}-y)*X $$
 \\[\frac{\partial L}{\partial b}=\frac{1}{N}*\sum(\widehat{y}-y)\\]
 
 \\[\frac{\partial L}{\partial W}=\frac{1}{N}*\sum((\widehat{y}-y)*X)\\]
