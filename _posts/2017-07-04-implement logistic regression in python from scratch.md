@@ -30,6 +30,20 @@ Instead we define the cost function for Logistic Regression as below:
             -log(1-F(x)) & \quad \text{if $y$ = 0}\\
           \end{array} 
           \right.\\]
+          
+$$F(x) = \left\{
+         \begin{array}{l l}
+            -log(F(x)) & \quad \text{if $y$ = 1}\\
+            -log(1-F(x)) & \quad \text{if $y$ = 0}\\
+          \end{array} 
+          \right.$$
+          
+\\[F(x) = \left\{
+         \begin{array}{l l}
+            -log(F(x)) & \quad \text{if $y$ = 1}\\
+            -log(1-F(x)) & \quad \text{if $y$ = 0}\\
+          \end{array} 
+          \right.\\]
 
 
 
