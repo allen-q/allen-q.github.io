@@ -7,4 +7,4 @@ First of all, what is Logistic Regression? In simple term, Logistic Regression i
 
 The logistic function can take any real input $$t$$, ($$t \in R$$), whereas the output always takes values between zero and one and hence is interpretable as a probability. The logistic function is defined as follows:
 
-\\[\sigma(t)=\frac{1}{1+e^{-t}}\\]
+\\[\sigma(t)=\frac{1}{1+e^{-t}}\in\\]
