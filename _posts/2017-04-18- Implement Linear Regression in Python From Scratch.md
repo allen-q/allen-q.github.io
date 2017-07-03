@@ -41,11 +41,13 @@ We can then estimate Y using the the formular $$ Y = W*X + b $$
 y_pred = X_data * W + b
 ```
 
-The next step is to determine how close y_pred is to the ground truth y_data. To quantify how good our y_pred, we introduce a metric called 'loss function' denoted as L. There are many ways to define a loss function and one of the most commonly used loss function is called the Mean Square Error (MSE). MSE is defined as $$ MSE = \frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2 $$. Below is the python code to calculate loss.
+The next step is to determine how close y_pred is to the ground truth y_data. To quantify how good our y_pred, we introduce a metric called 'loss function' denoted as L. There are many ways to define a loss function and one of the most commonly used loss function is called the Mean Square Error (MSE). MSE is defined as $$ MSE = \frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2 $$. Loss function using MSE is defined as below:
+
+\\[ L=\frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2\\]
 
 
 ```python
-L = 0.5*np.mean((y_pred - y_data)**2)  
+L = np.mean((y_pred - y_data)**2)  
 ```
 
 We now know how good the W and b parameters fit the data set, we need to find a way to improve them. We will do it by using an algorithm called gradient descent. 
@@ -54,7 +56,7 @@ Gradient descent is an iterative approach to finding the minimum of the loss fun
 
 Partial derivative of L w.r.t W: 
 
-\\[\frac{\partial L}{\partial b}=\frac{1}{N}*\sum(\widehat{y}-y)\*X\\]
+\\[\frac{\partial L}{\partial W}=\frac{1}{N}*\sum(\widehat{y}-y)\*X\\]
 
 Partial derivative of L w.r.t b: 
 
