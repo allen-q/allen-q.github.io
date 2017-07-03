@@ -35,7 +35,7 @@ W = np.random.random()
 b = 0
 ```
 
-We can then estimate Y using the the formular $$ Y = W*X + b $$
+We can then estimate Y using the the formular $$ Y_pred = W*X + b $$
 
 ```python
 y_pred = X_data * W + b
