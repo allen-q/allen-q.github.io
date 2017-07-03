@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 In this post, I'm going to explain how we can build a Logistic Regression machine learning algorithm using Python from scratch. I'm also going to explain the concept of this algorithm and discuss the math involved.
 
