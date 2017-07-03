@@ -22,5 +22,14 @@ We used MSE as the cost function(shown below) for Linear Regression.
 
 Howerver, MSE is not suitable to be used as a cost function for Logistic Regression because the function turns out to be non-convex. A non-convex function has multiple local minima which means we can't use gradient descent to minimize the cost function.
 
+Instead we define the cost function for Logistic Regression as below:
+
+\\[F(x) = \left\{ 
+         \begin{array}{l l}
+            -log(F(x)) & \quad \text{if $y$ = 1}\\
+            -log(1-F(x)) & \quad \text{if $y$ = 0}\\
+          \end{array} 
+          \right.\\]
+
 
 
