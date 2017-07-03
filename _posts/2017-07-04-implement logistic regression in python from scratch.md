@@ -11,9 +11,16 @@ The logistic function can take any real input $$t$$, ($$t \in R$$), whereas the 
 
 \\[\sigma(t)=\frac{1}{1+e^{-t}}\\]
 
-For Logistic Regression, $$t$$ is the output of Linear Regression $$W*X$$, therefor, the formular can be transformed as below:
+For Logistic Regression, $$t$$ is the output of Linear Regression $$W*X+b$$, therefore, the formular can be transformed as below:
 
-\\[\sigma(t)=\frac{1}{1+e^{-(W*X+b)}}\\]
+\\[F(x)=\frac{1}{1+e^{-(W*X+b)}}\\]
 
 ## Cost Function
+We used MSE as the cost function(shown below) for Linear Regression. 
+
+\\[ L=\frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2\\]
+
+Howerver, MSE is not suitable to be used as a cost function for Logistic Regression because the function turns out to be non-convex. A non-convex function has multiple local minima which means we can't use gradient descent to minimize the cost function.
+
+
 
