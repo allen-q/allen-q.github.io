@@ -41,7 +41,7 @@ We can then estimate Y using the the formular $$ Y = W*X + b $$
 y_pred = X_data * W + b
 ```
 
-The next step is to determine how close y_pred is to the ground truth y_data. To quantify how good our y_pred, we introduce a metric called 'loss function' denoted as L. There are many ways to define a loss function and one of the most commonly used loss function is called the Mean Square Error (MSE). MSE is defined as $$ MSE = \frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2 $$. Loss function using MSE is defined as below:
+The next step is to determine how close y_pred is to the ground truth y_data. To quantify how good our y_pred, we introduce a metric called 'loss function' denoted as L. There are many ways to define a loss function and one of the most commonly used loss function is called the Mean Square Error (MSE). Loss function using MSE is defined as below:
 
 \\[ L=\frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2\\]
 
@@ -56,11 +56,11 @@ Gradient descent is an iterative approach to finding the minimum of the loss fun
 
 Partial derivative of L w.r.t W: 
 
-\\[\frac{\partial L}{\partial W}=\frac{1}{N}*\sum(\widehat{y}-y)\*X\\]
+\\[\frac{\partial L}{\partial W}=\frac{1}{N}*\sum_{i=1}^n(\hat{y}-y)\*X\\]
 
 Partial derivative of L w.r.t b: 
 
-\\[\frac{\partial L}{\partial b}=\frac{1}{N}*\sum(\widehat{y}-y)\\]
+\\[\frac{\partial L}{\partial b}=\frac{1}{N}*\sum_{i=1}^n(\widehat{y}-y)\\]
 
 Update rules:
 
