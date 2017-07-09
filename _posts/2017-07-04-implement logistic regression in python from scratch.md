@@ -36,5 +36,9 @@ $$\hat{P} = \left\{
             0 & \quad \text{if $y$ = 0}\\
           \end{array} 
           \right.$$
-          
+
+If we assume all the data points are independent, the probability of the entire data set is the product of the probabilities of the individual data points:
+
+$$\prod_{i=1}^NP(y_{i}|W,X_{i})$$
+
 In the above function, y is the ground truth label which can be either 0 or 1. The output of F(x) takes value from 0 to 1, indicating the probability of $$y$$ being 1.
