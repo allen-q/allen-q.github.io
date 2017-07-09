@@ -11,18 +11,23 @@ The logistic function can take any real input $$t$$, ($$t \in R$$), whereas the 
 
 \\[\sigma(t)=\frac{1}{1+e^{-t}}\\]
 
-For Logistic Regression, $$t$$ is the output of Linear Regression $$W*X+b$$, therefore, the formular can be transformed as below:
+For Logistic Regression, $$t$$ is the output of Linear Regression $$W^T*X$$, therefore, the formular can be transformed as below:
 
-\\[F(x)=\frac{1}{1+e^{-(W*X+b)}}\\]
+\\[\hat{P}(y=+1|W,X)=\frac{1}{1+e^{-(W^T*X)}}\\]
 
-## Cost Function
+This function gives the probability of Y being 1 givin W and X.
+
+## Quality Metric
+
+Like Linear Regression where we used a loss function to measure the quality of the estimated parameters W, we need to find a quality metric for Logistic Regression. 
+
 We used MSE as the cost function(shown below) for Linear Regression. 
 
 \\[ L=\frac{1}{n} * \sum_{i=1}^n(\hat{Y}-Y)^2\\]
 
-Howerver, MSE is not suitable to be used as a cost function for Logistic Regression because the function turns out to be non-convex. A non-convex function has multiple local minima which means we can't use gradient descent to minimize the cost function.
+Howerver, MSE is not suitable for Logistic Regression because the function turns out to be non-convex. A non-convex function has multiple local minima which means we can't use gradient descent to minimize the cost function.
 
-Instead we define the cost function for Logistic Regression as below:
+Instead we can go back to the definition of the Logistic Regression Function. Remember the output of the function is the probability of Y being 1. If we have a perfect classifier, it will output 1 for all data points with label 1 and output 0 for all datapoints with label 0 like below:
         
 $$F(x) = \left\{
          \begin{array}{l l}
@@ -31,8 +36,4 @@ $$F(x) = \left\{
           \end{array} 
           \right.$$
           
-In the above function, y is the ground truth label which can be either 0 or 1. The output of F(x) takes value from 0 to 1, indicating the probability of $$y$$ being 1. 
-          
-
-
-
+In the above function, y is the ground truth label which can be either 0 or 1. The output of F(x) takes value from 0 to 1, indicating the probability of $$y$$ being 1.
