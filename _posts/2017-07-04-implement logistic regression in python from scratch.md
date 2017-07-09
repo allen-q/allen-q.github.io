@@ -41,4 +41,9 @@ If we assume all the data points are independent, the probability of the entire 
 
 $$\prod_{i=1}^NP(y_{i}|W,X_{i})$$
 
-In the above function, y is the ground truth label which can be either 0 or 1. The output of F(x) takes value from 0 to 1, indicating the probability of $$y$$ being 1.
+For a perfect classifier which classifies everything right, the output of this function will be 1. On the contrary, for the worst classifier which doesn't classify anything right, the output of this function will be 0. In another word, the higher the output of this function, the better our classifier is. This function is called likelihood function and we can use it as our quality metric to measure the performance of our classifier.
+
+
+
+
+
