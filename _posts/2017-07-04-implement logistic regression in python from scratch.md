@@ -27,12 +27,13 @@ We used MSE as the cost function(shown below) for Linear Regression.
 
 Howerver, MSE is not suitable for Logistic Regression because the function turns out to be non-convex. A non-convex function has multiple local minima which means we can't use gradient descent to minimize the cost function.
 
-Instead we can go back to the definition of the Logistic Regression Function. Remember the output of the function is the probability of Y being 1. If we have a perfect classifier, it will output 1 for all data points with label 1 and output 0 for all datapoints with label 0 like below:
+Instead we can go back to the definition of the Logistic Regression Function. Remember the output of the function is the probability of Y being 1. If we have a perfect classifier, it will output 1 for all data 
+points with label 1 and output 0 for all datapoints with label 0 like below:
         
-$$F(x) = \left\{
+$$\hat{P} = \left\{
          \begin{array}{l l}
-            -log(F(x)) & \quad \text{if $y$ = 1}\\
-            -log(1-F(x)) & \quad \text{if $y$ = 0}\\
+            1 & \quad \text{if $y$ = 1}\\
+            0 & \quad \text{if $y$ = 0}\\
           \end{array} 
           \right.$$
           
