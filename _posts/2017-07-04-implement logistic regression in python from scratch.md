@@ -39,12 +39,12 @@ $$\hat{P} = \left\{
 
 If we assume all the data points are independent, the probability of the entire data set is the product of the probabilities of the individual data points:
 
-$$\prod_{i=1}^NP(y_{i}|W,X_{i})$$
+$$\ell(W)=\prod_{i=1}^NP(y_{i}|W,X_{i})$$
 
 For a perfect classifier which classifies everything right, the output of this function will be 1. On the contrary, for the worst classifier which doesn't classify anything right, the output of this function will be 0. In another word, the higher the output of this function, the better our classifier is. This function is called likelihood function and we can use it as our quality metric to measure the performance of our classifier. Unfortunately there is no closed-form solution to solve this function so we have to use other optimization methods such as gradient descent to find the maximum. 
 
 One little trick with maximize the likelihood function is to do a log transformation first. 
 
-
+$$\ell\ell(W)=\lg{\prod_{i=1}^NP(y_{i}|W,X_{i})}$$
 
 
