@@ -47,4 +47,9 @@ One little trick with maximize the likelihood function is to do a log transforma
 
 $$\ell\ell(W)=\lg{\prod_{i=1}^NP(y_{i}|W,X_{i})}$$
 
+Mathmatically, maximizing the log likelihood function will also maximize the likelihood function. However, maximizing log likelihood function is much easier than maximising the likelihood directly because using log we can transform products to sums like below:
+
+$$\ell\ell(W)=\sum_{i=1}^N\lg{P(y_{i}|W,X_{i})}$$
+
+
 
