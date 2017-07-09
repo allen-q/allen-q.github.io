@@ -13,7 +13,7 @@ The logistic function can take any real input $$t$$, ($$t \in R$$), whereas the 
 
 For Logistic Regression, $$t$$ is the output of Linear Regression $$W^T*X$$, therefore, the formular can be transformed as below:
 
-\\[\hat{P}(y=+1|W,X)=\frac{1}{1+e^{-(W^T*X)}}\\]
+$$\hat{P}(y=+1|W,X)=\frac{1}{1+e^{-(W^T*X)}}$$
 
 This function gives the probability of Y being 1 givin W and X.
 
